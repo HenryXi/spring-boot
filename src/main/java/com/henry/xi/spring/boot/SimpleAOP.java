@@ -7,8 +7,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.http.HttpServletRequest;
-
 @Aspect
 @Component
 public class SimpleAOP {
@@ -17,7 +15,6 @@ public class SimpleAOP {
 
         try {
             Object[] args = joinPoint.getArgs();
-            HttpServletRequest request = null;
             for (int i = 0; i < args.length; i++) {
                 System.out.println(args.toString());
             }
