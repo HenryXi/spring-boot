@@ -1,6 +1,6 @@
 package com.henry.xi.spring.boot.controller;
 
-import com.henry.xi.spring.boot.service.SimpleService;
+import com.henry.xi.spring.boot.service.SimpleServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -20,12 +20,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class SimpleController {
 
     @Autowired
-    private SimpleService simpleService;
+    private SimpleServiceImpl simpleService;
 
-
-    @RequestMapping(value ="/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
-    public String hello(){
+    public String hello() {
         return simpleService.service("test");
     }
 
