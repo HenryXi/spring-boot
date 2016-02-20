@@ -2,7 +2,8 @@
 Before spring boot came out if you want build a spring project
 you have to download tomcat and write some spring config file.
 But now you can put them away! In this tutorial I will show you
-how to build spring project in 1 minute.
+how to build spring project in one minute .
+
 1. create a maven project add below content in your pom.xml file
 ```xml
   <dependency>
