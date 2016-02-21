@@ -35,6 +35,6 @@ Hello Spring Boot
 ```
 
 As you see spring boot help us build restful project quickly,
-no more tomcat no more configration files! Next
+no more tomcat no more configuration files! Next
 time if you want just test something or build a sample project
 you can use spring boot.

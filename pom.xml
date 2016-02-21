@@ -10,12 +10,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>quick_start</module>
+        <module>complicated</module>
+        <module>etc</module>
     </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>1.0.2.RELEASE</version>
+            <version>1.3.2.RELEASE</version>
         </dependency>
     </dependencies>
 
