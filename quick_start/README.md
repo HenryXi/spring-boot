@@ -6,12 +6,12 @@ how to build spring project in one minute .
 
 1. create a maven project add below content in your pom.xml file
     ```xml
-      <dependency>
+        <dependency>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-web</artifactId>
           <version>1.3.2.RELEASE</version>
-      </dependency>
-    ```
+        </dependency>
+    
 2. create a controller class like below
     ```xml
         @Controller
@@ -27,13 +27,12 @@ how to build spring project in one minute .
                 SpringApplication.run(SimpleController.class, args);
             }
         }
-    ```
+    
 3. run main method in this controller and access this link
     <http://localhost:8080/hello/> , you can see like below:
     ```
     Hello Spring Boot
-    ```
-
+    
 As you see spring boot help us build restful project quickly,
 no more tomcat no more configuration files! Next
 time if you want just test something or build a sample project
