@@ -9,7 +9,7 @@ how to build spring project in one minute .
   <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>1.0.2.RELEASE</version>
+      <version>1.3.2.RELEASE</version>
   </dependency>
 ```
 2. create a controller class like below
