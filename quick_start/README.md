@@ -1,10 +1,11 @@
 # Build a restful spring project in 1 minute.
-Before spring boot came out if you want build a spring project
-you have to download tomcat and write some spring config file.
-But now you can put them away! In this tutorial I will show you
-how to build spring project in one minute .
+If you want build a spring project you have to download 
+servlet container(tomcat, jetty, glassfish etc.) write some 
+spring config file. But now you can throw them away! In this 
+tutorial I will show you how to build spring project in one 
+minute with "spring boot".
 
-1. create a maven project add below content in your pom.xml file
+1. create a maven project add dependencies below in your pom.xml file.
     ```xml
         <dependency>
           <groupId>org.springframework.boot</groupId>
@@ -13,7 +14,7 @@ how to build spring project in one minute .
         </dependency>
         
     ```
-2. create a controller class like below
+2. create a controller class.
     ```xml
         @Controller
         @EnableAutoConfiguration
@@ -29,13 +30,13 @@ how to build spring project in one minute .
             }
         }
     ```
-3. run main method in this controller and access this link
-    <http://localhost:8080/hello/> , you can see like below:
+3. run main method in this controller then access this link
+       <http://localhost:8080/hello/> , you can see like below.
     ```
     Hello Spring Boot
     
     ```
-As you see spring boot help us build restful project quickly,
-no more tomcat no more configuration files! Next
-time if you want just test something or build a sample project
-you can use spring boot.
+As you see "spring boot" help us build restful project quickly.
+There is no servlet container, no configuration files! If you want 
+just test something or build a sample project you can use "spring boot". 
+Easy and quick.
