@@ -1,4 +1,4 @@
-# Difference between @Controller and @RestController annotation
+# Difference between @Controller and @RestController
 
 Annotations of Spring Framework greatly simplifies the RESTful project developing process.
 @Controller is used to indicates that an annotated class is a "Controller".
