@@ -5,16 +5,16 @@ RESTful project quickly, Mybatis is one of the best ORM framework. Use Mybatis i
 can help you build persistence layer of your project quickly and easily. I will provide a complete
 example for using MyBatis in Spring Boot step by step.
 
-## Require
+**Require**
 I use following software and tools to build this project.
 Java 7 + Maven + PostgreSQL + IntelliJ
 
-## Project Structure
+**Project Structure**
 Create a maven project in Intellij and the structure like below.
 
 ![Project Structure](./Spring_Mybatis.png?raw=true )
 
-## Create table in your Database
+**Create table in your Database**
 I use follow SQL to create a sample table in my Database. After
 creation insert a record in it.
 ```
@@ -26,7 +26,7 @@ CREATE TABLE public.users (
 );
 INSERT INTO users VALUES (1, 'user1', 27, 'password');
 ```
-## Dependencies in pom.xml file
+**Dependencies in pom.xml file**
 ```
 <properties>
     <spring.boot.version>1.3.2.RELEASE</spring.boot.version>
@@ -59,7 +59,7 @@ INSERT INTO users VALUES (1, 'user1', 27, 'password');
     </dependency>
 </dependencies>
 ```
-## Define SqlSessionFactoryBean, DataSource and DataSourceTransactionManager in Configuration class
+**Define SqlSessionFactoryBean, DataSource and DataSourceTransactionManager in Configuration class**
 In normal Spring project we are used to define SqlSessionFactoryBean, DataSource and
 DataSourceTransactionManager in Spring configuration file(*.xml). Here we use ``@Bean``
 define them in class. The annotation ``@MapperScan`` will scan the interfaces in appointed
@@ -99,7 +99,7 @@ public class Application {
     }
 }
 ```
-## Create mapper xml file and interface
+**Create mapper xml file and interface**
 In Mybatis we use interface and mapper xml file to get record from database.
 
 UserMapper.xml
@@ -120,3 +120,38 @@ public interface UserMapper {
     User findUserInfo();
 }
 ```
+**Create controller and model**
+controller and model is sample.
+```
+@Controller
+public class UserController {
+
+    private Logger logger = Logger.getLogger(UserController.class);
+
+    @Autowired
+    private UserService userService;
+
+    @RequestMapping("/getUserInfo")
+    @ResponseBody
+    public User getUserInfo() {
+        User user = userService.getUserInfo();
+        if(user!=null){
+            System.out.println("user.getName():"+user.getName());
+            logger.info("user.getAge():"+user.getAge());
+        }
+        return user;
+    }
+}
+```
+model as following
+```
+public class User {
+    private String name;
+    private Integer age;
+    private String password;
+
+    //getter and setter
+}
+
+```
+Now you can start your project by running the main method in ``Application`` class.
