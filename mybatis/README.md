@@ -12,7 +12,7 @@ Java 7 + Maven + PostgreSQL + IntelliJ
 ## Project Structure
 Create a maven project in Intellij and the structure like below.
 
-![Project Structure](./Spring_Mybatis.png)
+[Project Structure](./Spring_Mybatis.png)
 
 ## Create table in your Database
 I use follow SQL to create a sample table in my Database. After
