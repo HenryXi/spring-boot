@@ -1,8 +1,8 @@
-package com.henry.xi.complicated;
+package com.henry.xi.general;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Configuration {
+public class AppConfiguration {
 
 }

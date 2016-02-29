@@ -1,4 +1,4 @@
-package com.henry.xi.complicated.service;
+package com.henry.xi.general.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.henry.xi.complicated.controller;
+package com.henry.xi.general.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
