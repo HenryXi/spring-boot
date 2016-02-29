@@ -14,7 +14,7 @@ Java 7 + Maven + PostgreSQL + IntelliJ
 
 Create a maven project in Intellij and the structure like below.
 
-![Project Structure](./Spring_Mybatis.png?raw=true )
+![Project Structure](https://raw.githubusercontent.com/HenryXi/spring-boot/develop/mybatis/Spring_Mybatis.png)
 
 **Create table in your Database**
 
