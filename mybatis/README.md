@@ -6,16 +6,19 @@ can help you build persistence layer of your project quickly and easily. I will 
 example for using MyBatis in Spring Boot step by step.
 
 **Require**
+
 I use following software and tools to build this project.
 Java 7 + Maven + PostgreSQL + IntelliJ
 
 **Project Structure**
+
 Create a maven project in Intellij and the structure like below.
 
 ![Project Structure](./Spring_Mybatis.png?raw=true )
 
 **Create table in your Database**
-I use follow SQL to create a sample table in my Database. After
+
+I use following SQL to create a sample table in my Database. After
 creation insert a record in it.
 ```
 CREATE TABLE public.users (
@@ -60,6 +63,7 @@ INSERT INTO users VALUES (1, 'user1', 27, 'password');
 </dependencies>
 ```
 **Define SqlSessionFactoryBean, DataSource and DataSourceTransactionManager in Configuration class**
+
 In normal Spring project we are used to define SqlSessionFactoryBean, DataSource and
 DataSourceTransactionManager in Spring configuration file(*.xml). Here we use ``@Bean``
 define them in class. The annotation ``@MapperScan`` will scan the interfaces in appointed
@@ -100,6 +104,7 @@ public class Application {
 }
 ```
 **Create mapper xml file and interface**
+
 In Mybatis we use interface and mapper xml file to get record from database.
 
 UserMapper.xml
@@ -121,6 +126,7 @@ public interface UserMapper {
 }
 ```
 **Create controller and model**
+
 controller and model is sample.
 ```
 @Controller
