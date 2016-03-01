@@ -14,7 +14,7 @@ the value in properties file.
 
 Create a maven project in Intellij, make structure as following.
 
-![Project Structure](./properties.png)
+![Project Structure](https://github.com/HenryXi/spring-boot/blob/develop/properties/properties.png)
 
 
 **Dependencies in pom.xml file**
