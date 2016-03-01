@@ -12,6 +12,13 @@
         <module>quick_start</module>
         <module>general</module>
         <module>mybatis</module>
+        <module>redis</module>
+        <module>filter</module>
+        <module>jsp</module>
+        <module>test</module>
+        <module>properties</module>
+        <module>security</module>
+        <module>actuator</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.2.RELEASE</spring.boot.version>
