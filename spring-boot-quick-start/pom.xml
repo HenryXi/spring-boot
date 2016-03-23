@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>general</artifactId>
+    <artifactId>spring-boot-quick-start</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -17,5 +18,4 @@
             <version>${spring.boot.version}</version>
         </dependency>
     </dependencies>
-
 </project>

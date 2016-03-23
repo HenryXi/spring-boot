@@ -9,26 +9,23 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>quick_start</module>
+        <module>spring-boot-quick-start</module>
         <module>general</module>
-        <module>mybatis</module>
+        <module>spring-boot-mybatis</module>
         <module>redis</module>
         <module>filter</module>
         <module>jsp</module>
         <module>test</module>
-        <module>properties</module>
+        <module>spring-boot-properties</module>
         <module>security</module>
         <module>actuator</module>
+        <module>jdbc</module>
+        <module>spring-properties</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.2.RELEASE</spring.boot.version>
+        <spring.version>4.2.4.RELEASE</spring.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-    </dependencies>
+
 
 </project>
