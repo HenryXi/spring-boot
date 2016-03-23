@@ -1,3 +1,0 @@
-# JdbcTemplate CRUD examples
-JdbcTemplate is the central class in the JDBC core package. You can use it manipulate database without
-handling common errors.

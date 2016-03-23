@@ -19,7 +19,7 @@
         <module>spring-boot-properties</module>
         <module>security</module>
         <module>actuator</module>
-        <module>jdbc</module>
+        <module>spring-boot-jdbc</module>
         <module>spring-properties</module>
     </modules>
     <properties>
