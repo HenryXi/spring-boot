@@ -8,9 +8,9 @@ values from properties in Spring.
 3. using ``PreferencesPlaceholderConfigurer`` and ``@Value`` inject value into bean
 4. using ``@Configuration`` and ``@PropertySource`` inject ``Environment`` object into bean
 
-using util tag in spring config file
+##### using util tag in spring config file
 ===
 
-pom file
+pom file **test**
 
 
