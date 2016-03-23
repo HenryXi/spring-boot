@@ -9,7 +9,7 @@
     </parent>
     <packaging>pom</packaging>
     <modules>
-        <module>preferences-placeholder-configurer</module>
+        <module>property-placeholder-configurer</module>
         <module>properties-factory-bean</module>
         <module>util-tag</module>
         <module>configuration-annotation</module>
