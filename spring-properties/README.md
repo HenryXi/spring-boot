@@ -4,9 +4,9 @@ or change some code to fit your needs. In this tutorial I will show you differen
 values from properties in Spring.
 
 1. [using util tag in spring config file](#using-util-tag-in-spring-config-file)
-2. [using PropertiesFactoryBean create Properties object](#)
-3. [using PropertyPlaceholderConfigurer and @Value inject value into bean]
-4. [using @Configuration and @PropertySource inject Environment object into bean]
+2. [using PropertiesFactoryBean create Properties object](#using-propertiesfactorybean-create-properties-object)
+3. [using PropertyPlaceholderConfigurer and @Value inject value into bean](#using-propertyplaceholderconfigurer-and-value-inject-value-into-bean)
+4. [using @Configuration and @PropertySource inject Environment object into bean](#using-configuration-and-propertysource-inject-environment-object-into-bean)
 
 properties file in all these 4 project like following
 ```
