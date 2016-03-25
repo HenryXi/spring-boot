@@ -29,7 +29,9 @@ CREATE TABLE public.tb_user
 );
 INSERT INTO tb_user (username, comment) VALUES ('username', 'comments');
 ```
-JdbcTemplate CRUD examples is [here](http://www.henryxi.com/jdbctemplate-examples-in-spring-boot)
+JdbcTemplate CRUD examples click [here](http://www.henryxi.com/jdbctemplate-examples-in-spring-boot)
+
+Install PostgreSQL and configure click [here](http://www.henryxi.com/install-and-configure-postgresql-on-linux)
 
 **pom.xml file**
 ```
