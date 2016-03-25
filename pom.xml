@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.henry.xi.spring.boot</groupId>
+    <groupId>com.henry.spring.boot</groupId>
     <artifactId>spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -15,12 +15,13 @@
         <module>redis</module>
         <module>filter</module>
         <module>jsp</module>
-        <module>test</module>
+        <module>spring-boot-unit-test</module>
         <module>spring-boot-properties</module>
         <module>security</module>
         <module>actuator</module>
         <module>spring-boot-jdbc</module>
         <module>spring-properties</module>
+        <module>spring-boot-thread</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.2.RELEASE</spring.boot.version>

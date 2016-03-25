@@ -9,6 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-boot-jdbc</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>simple-crud</module>
+        <module>query-examples</module>
+        <module>batch-update</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
