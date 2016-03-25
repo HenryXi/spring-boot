@@ -19,15 +19,18 @@ Boot(SpringMVC) you can access different address to invoke different query metho
 └─test
     └─java              
 ```
-**init database**
+**init database(PostgreSQL)**
 ```
 CREATE TABLE public.tb_user
 (
   id SERIAL PRIMARY KEY NOT NULL,
   username VARCHAR(20) NOT NULL,
   comment VARCHAR(500)
-)
+);
+INSERT INTO tb_user (username, comment) VALUES ('username', 'comments');
 ```
+JdbcTemplate CRUD examples is [here](http://www.henryxi.com/jdbctemplate-examples-in-spring-boot)
+
 **pom.xml file**
 ```
 <dependency>
@@ -192,4 +195,4 @@ public class User {
     }
 }
 ```
-Run the main method and request different address can see how JdbcTemplate works. 
+Run the main method and request different address you can see how JdbcTemplate works. 
