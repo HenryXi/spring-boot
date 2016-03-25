@@ -197,4 +197,5 @@ public class User {
     }
 }
 ```
-Run the main method and request different address you can see how JdbcTemplate works. 
+Run the main method and request different address you can see how JdbcTemplate works. Want know how to
+build and run a Spring Boot project click [here](http://www.henryxi.com/build-a-restful-spring-project-in-1-minute).
