@@ -19,6 +19,13 @@ Boot(SpringMVC) you can access different address to invoke different query metho
 └─test
     └─java              
 ```
+**application.properties**
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/demo
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.datasource.driver-class-name=org.postgresql.Driver
+```
 **init database(PostgreSQL)**
 ```
 CREATE TABLE public.tb_user
