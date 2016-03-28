@@ -87,7 +87,7 @@ public class User {
     }
     ```
     I found this ``batchUpdate`` function return int[][] instead of int[]. After viewing source I got
-    the answer. If you are interested, click [here](). 
+    the answer. If you are interested, click [here](http://www.henryxi.com/why-batchupdate-return-int-instead-of-int). 
 * batchUpdate(String sql, List<Object[]> batchArgs)
 
     ```
