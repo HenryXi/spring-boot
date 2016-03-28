@@ -5,12 +5,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ParameterizedPreparedStatementSetter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,14 +54,40 @@ public class BatchUpdateController {
         return "Batch update affect rows: " + Arrays.toString(affects);
     }
 
-    @RequestMapping(value = "/batchUpdate-objectArray", method = RequestMethod.GET)
-    public String batchUpdate() {
+    @RequestMapping(value = "/batchUpdate-objectList", method = RequestMethod.GET)
+    public String batchUpdateObjectList() {
         List<Object[]> parametersList = new ArrayList<Object[]>();
         parametersList.add(new Object[]{"username_batch1", "comment_batch1"});
         parametersList.add(new Object[]{"username_batch2", "comment_batch2"});
         parametersList.add(new Object[]{"username_batch3", "comment_batch3"});
         int[] affects = jdbcTemplate.batchUpdate("INSERT INTO tb_user (username,comment) VALUES (?,?)", parametersList);
         return "Batch update affect rows: " + Arrays.toString(affects);
+    }
+
+    @RequestMapping(value = "/batchUpdate-objectListWithArgType", method = RequestMethod.GET)
+    public String batchUpdateWithArgType() {
+        List<Object[]> parametersList = new ArrayList<Object[]>();
+        int[] argTypes = {Types.VARCHAR, Types.VARCHAR};
+        parametersList.add(new Object[]{"username_batch1", "comment_batch1"});
+        parametersList.add(new Object[]{"username_batch2", "comment_batch2"});
+        parametersList.add(new Object[]{"username_batch3", "comment_batch3"});
+        int[] affects = jdbcTemplate.batchUpdate("INSERT INTO tb_user (username,comment) VALUES (?,?)", parametersList, argTypes);
+        return "Batch update affect rows: " + Arrays.toString(affects);
+    }
+
+    @RequestMapping(value = "/batchUpdate-ParameterizedPreparedStatementSetter", method = RequestMethod.GET)
+    public String batchUpdateParameterizedPreparedStatementSetter() {
+        List<User> userList = new ArrayList<User>();
+        userList.add(new User("username_batch1", "comment_batch1"));
+        userList.add(new User("username_batch2", "comment_batch2"));
+        userList.add(new User("username_batch3", "comment_batch3"));
+        int[][] affects = jdbcTemplate.batchUpdate("INSERT INTO tb_user (username,comment) VALUES (?,?)", userList, userList.size(), new ParameterizedPreparedStatementSetter<User>() {
+            public void setValues(PreparedStatement ps, User user) throws SQLException {
+                ps.setString(1, user.getUsername());
+                ps.setString(2, user.getComment());
+            }
+        });
+        return "Batch update affect rows: " + Arrays.deepToString(affects);
     }
 
     public static void main(String[] args) {
