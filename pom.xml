@@ -14,7 +14,7 @@
         <module>spring-boot-mybatis</module>
         <module>redis</module>
         <module>filter</module>
-        <module>jsp</module>
+        <module>spring-boot-jsp</module>
         <module>spring-boot-unit-test</module>
         <module>spring-boot-properties</module>
         <module>security</module>
