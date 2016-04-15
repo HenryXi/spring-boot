@@ -102,5 +102,5 @@ with main method I got 404 page. I found there is no jsp file in jar. I changed 
 ```
 
 Add ``spring-boot-maven-plugin`` in pom file, run maven command ``mvn clean spring-boot:run`` and access 'localhost:8080' it works.
-It means you have to make servlet container found the jsp files. Use maven plugin to package it in war or put jsp in META-INF 
+It means you have to make servlet container found the jsp files. Use maven plugin to package jsp in war or put jsp in META-INF 
 folder.
