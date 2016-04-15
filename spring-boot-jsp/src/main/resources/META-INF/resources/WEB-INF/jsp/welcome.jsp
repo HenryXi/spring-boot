@@ -7,6 +7,7 @@
 	<title>Insert title here</title>
 </head>
 <body>
-	Hello Spring boot jsp
+	${message}
+	<div>${time}</div>
 </body>
 </html>
