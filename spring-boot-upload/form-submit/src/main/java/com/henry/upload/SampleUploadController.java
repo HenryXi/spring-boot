@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
+import java.io.IOException;
 
 @Controller
 @EnableAutoConfiguration
@@ -21,9 +22,14 @@ public class SampleUploadController extends SpringBootServletInitializer {
 
     @RequestMapping("/upload")
     @ResponseBody
-    public String upload(@RequestParam("file") MultipartFile filename) {
-        CommonsMultipartFile cf = (CommonsMultipartFile) filename;
-        return "file name:" + cf.getOriginalFilename();
+    public String upload(@RequestParam("file") MultipartFile file) {
+        try {
+            String content = new String(file.getBytes());
+            return "file name:" + file.getOriginalFilename() + "<br> content:" + content;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "file name:" + file.getOriginalFilename() +"<br> read file content error.";
     }
 
     public static void main(String[] args) throws Exception {
