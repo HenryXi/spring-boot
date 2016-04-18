@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.StringBufferInputStream;
-import java.io.StringReader;
-
 @Controller
 @EnableAutoConfiguration
 public class SampleUploadController extends SpringBootServletInitializer {
@@ -28,9 +23,7 @@ public class SampleUploadController extends SpringBootServletInitializer {
     @ResponseBody
     public String upload(@RequestParam("file") MultipartFile filename) {
         CommonsMultipartFile cf = (CommonsMultipartFile) filename;
-        ByteArrayInputStream stream = new StringReader(file.getBytes());
-        String myString = IOUtils.toString(stream, "UTF-8");
-        return "success";
+        return "file name:" + cf.getOriginalFilename();
     }
 
     public static void main(String[] args) throws Exception {
