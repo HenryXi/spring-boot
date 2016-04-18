@@ -1,4 +1,4 @@
-package com.henry.upload;
+package com.henryxi.upload.form;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
