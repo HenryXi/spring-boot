@@ -7,7 +7,7 @@
     <title>upload file</title>
 </head>
 <body>
-<script type="application/javascript" src="../jquery.1.12.0.js"></script>
+<script type="application/javascript" src="jquery.1.12.0.js"></script>
 <form action="upload" enctype="multipart/form-data">
     <input type="file" id="file" name="file">
     <input id="uploadBtn" type="button" value="upload">

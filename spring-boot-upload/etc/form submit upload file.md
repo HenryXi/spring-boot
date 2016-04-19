@@ -83,5 +83,23 @@ multipart.maxRequestSize: 15MB
 ``multipart.maxFileSize`` specifies the maximum size permitted for uploaded files. The default is 1Mb.
 ``multipart.maxRequestSize`` specifies the maximum size allowed for multipart/form-data requests. The default is 10Mb
 
+**jps file**
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>upload file</title>
+</head>
+<body>
+<form action="upload" method="POST" enctype="multipart/form-data">
+    <input type="file" id="file" name="file">
+    <input type="submit">
+</form>
+</body>
+</html>
+```
 Run the main method and visit http://localhost:8080/, click upload button choose the file you want upload then 
 click submit. You will get the file name and content.
