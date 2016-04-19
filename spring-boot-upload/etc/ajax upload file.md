@@ -25,7 +25,7 @@ Last blog [Spring Boot upload file with form example](http://www.henryxi.com/spr
 │                  └─jsp
 │                          upload.jsp
 ```
-The dependencies in pom file are same as [Spring Boot upload file with form example](http://www.henryxi.com/spring-boot-upload-file-with-form-example).
+The dependencies in ``pom`` file and configurations in ``application.properties`` are same as [Spring Boot upload file with form example](http://www.henryxi.com/spring-boot-upload-file-with-form-example).
 To use ajax upload file you need add ``jquery`` in the ``META_INF/resource`` folder. Following paths
  in Spring Boot defined as default resource directories.
 
