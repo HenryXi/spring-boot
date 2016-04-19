@@ -8,23 +8,21 @@
 </head>
 <body>
 <script type="application/javascript" src="jquery.1.12.0.js"></script>
-<form action="upload" enctype="multipart/form-data">
-    <input type="file" id="file" name="file">
-    <input id="uploadBtn" type="button" value="upload">
-</form>
+<input type="file" id="file" name="file">
+<input id="uploadBtn" type="button" value="upload">
 <div id="content"></div>
 <script type="application/javascript">
-    $('#uploadBtn').click(function(){
+    $('#uploadBtn').click(function () {
         var formData = new FormData();
         formData.append('file', $('#file')[0].files[0]);
 
         $.ajax({
-            url : 'upload',
-            type : 'POST',
-            data : formData,
+            url: 'upload',
+            type: 'POST',
+            data: formData,
             processData: false,  // tell jQuery not to process the data
             contentType: false,  // tell jQuery not to set contentType
-            success : function(data) {
+            success: function (data) {
                 $('#content').html(data);
             }
         });
