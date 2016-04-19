@@ -1,4 +1,4 @@
-# spring boot tutorial
+# Spring Boot tutorial
 Spring Boot is Spring's convention-over-configuration solution. You can build a Spring project with less
 configuration. You do not need deploy you project in Tomcat or Jetty, you can "just run" a Spring Boot project. 
 In This tutorial we will show you how to use spring boot step by step.
