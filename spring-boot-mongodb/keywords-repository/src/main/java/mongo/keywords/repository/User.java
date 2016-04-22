@@ -1,9 +1,23 @@
-package com.henryxi.mongodb;
+package mongo.keywords.repository;
+
+import org.springframework.data.annotation.Id;
+
+import java.util.Date;
 
 public class User {
+    @Id
     private String id;
     private String name;
     private int age;
+    private Date createDate;
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
 
     public String getId() {
         return id;

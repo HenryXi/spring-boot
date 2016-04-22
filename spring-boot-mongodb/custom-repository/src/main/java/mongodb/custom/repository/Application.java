@@ -1,24 +1,24 @@
-package com.henryxi.mongodb;
+package mongodb.custom.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.core.MongoTemplate;
+
+import java.util.List;
+import java.util.UUID;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
     @Autowired
     private UserRepository userRepository;
-    @Autowired
-    private MongoTemplate mongoTemplate;
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     public void run(String... strings) throws Exception {
-        userRepository.deleteAll();
-        mongoTemplate.qu
+        List<User> users = userRepository.findByName("test");
+        System.out.println(users.toString());
     }
 }
