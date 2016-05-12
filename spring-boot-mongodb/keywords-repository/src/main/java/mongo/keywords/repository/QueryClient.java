@@ -6,15 +6,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.List;
-import java.util.UUID;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
+public class QueryClient implements CommandLineRunner {
     @Autowired
     private UserRepository userRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(QueryClient.class, args);
     }
 
     public void run(String... strings) throws Exception {
