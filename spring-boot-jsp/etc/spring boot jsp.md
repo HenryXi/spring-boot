@@ -24,7 +24,7 @@ uses an embedded servlet container which is not rendering JSP as default.
 ```
 
 **pom file**
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -43,7 +43,7 @@ uses an embedded servlet container which is not rendering JSP as default.
 ```
 
 **java code**
-```
+```java
 @Controller
 @EnableAutoConfiguration
 public class SampleWebJspController extends SpringBootServletInitializer {
@@ -65,7 +65,7 @@ public class SampleWebJspController extends SpringBootServletInitializer {
 ```
 
 **welcome.jsp**
-```
+```html
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -84,7 +84,7 @@ Start the project with main method and access localhost:8080 you can see the pag
 
 At first I make a directory in src/main like ``webapp/WEB-INF/jsp`` and put all jsp in it. When I try to access root path
 with main method I got 404 page. I found there is no jsp file in jar. I changed the pom file like following
-```
+```xml
 <packaging>war</packaging>
 <dependencies>
     <!-- dependency here -->
