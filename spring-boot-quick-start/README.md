@@ -15,7 +15,7 @@ minute with "spring boot".
         
     ```
 2. create a controller class.
-    ```xml
+    ```java
         @Controller
         @EnableAutoConfiguration
         public class SimpleController {
