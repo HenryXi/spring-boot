@@ -4,7 +4,7 @@ use ``batchUpdate``. It is more elegant and faster than update(insert) records o
 blog we will show you how to use ``batchUpdate`` in JdbcTemplate.
 
 **Init database**
-```
+```sql
 CREATE TABLE public.tb_user
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE public.tb_user
 );
 ```
 **Entity code**
-```
+```java
 public class User {
     private int id;
     private String username;
@@ -36,7 +36,7 @@ public class User {
 
 * batchUpdate(String... sql)
 
-    ```
+    ```java
     public String batchUpdateMultipleSQL() {
         int[] affects = jdbcTemplate.batchUpdate(
                 "INSERT INTO tb_user (username,comment) VALUES ('username_batch1','comment_batch1')",
@@ -46,7 +46,7 @@ public class User {
     ```
 * batchUpdate(String sql, BatchPreparedStatementSetter pss)
 
-    ```
+    ```java
     public String batchUpdateBatchPreparedStatementSetter() {
         final List<User> userList = new ArrayList<User>();
         User user1 = new User("username_batch1", "comment_batch1");
@@ -71,7 +71,7 @@ public class User {
     ```
 * batchUpdate(String sql, Collection<T> batchArgs, int batchSize, ParameterizedPreparedStatementSetter<T> pss)
     
-    ```
+    ```java
     public String batchUpdateParameterizedPreparedStatementSetter() {
         List<User> userList = new ArrayList<User>();
         userList.add(new User("username_batch1", "comment_batch1"));
@@ -90,7 +90,7 @@ public class User {
     the answer. If you are interested, click [here](http://www.henryxi.com/why-batchupdate-return-int-instead-of-int). 
 * batchUpdate(String sql, List<Object[]> batchArgs)
 
-    ```
+    ```java
     public String batchUpdateObjectList() {
         List<Object[]> parametersList = new ArrayList<Object[]>();
         parametersList.add(new Object[]{"username_batch1", "comment_batch1"});
@@ -102,7 +102,7 @@ public class User {
     ```
 * batchUpdate(String sql, List<Object[]> batchArgs, int[] argTypes)
 
-    ```
+    ```java
     public String batchUpdateWithArgType() {
         List<Object[]> parametersList = new ArrayList<Object[]>();
         int[] argTypes = {Types.VARCHAR, Types.VARCHAR};
