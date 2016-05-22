@@ -23,7 +23,7 @@ don't kow how to use jsp in Spring Boot you can click [here](http://www.henryxi.
 ```
 
 **dependencies in pom file**
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -44,7 +44,7 @@ don't kow how to use jsp in Spring Boot you can click [here](http://www.henryxi.
 ```
 
 **java code**
-```
+```java
 @Controller
 @EnableAutoConfiguration
 public class SampleUploadController extends SpringBootServletInitializer {
@@ -84,7 +84,7 @@ multipart.maxRequestSize: 15MB
 ``multipart.maxRequestSize`` specifies the maximum size allowed for multipart/form-data requests. The default is 10Mb
 
 **jps file**
-```
+```html
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
