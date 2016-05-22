@@ -5,7 +5,7 @@ It makes me wonder. ``int[]`` means the number of rows affected by each statemen
 why use ``int[][]``.
 
 The source code is here
-```
+```java
 if (logger.isDebugEnabled()) {
         logger.debug("Executing SQL batch update [" + sql + "] with a batch size of " + batchSize);
     }
