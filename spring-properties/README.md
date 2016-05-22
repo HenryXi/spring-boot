@@ -14,7 +14,7 @@ server.address=192.168.6.6
 server.port=6666
 ```
 the version of Spring is ``4.2.4.RELEASE`` pom file like following
-```
+```xml
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
@@ -22,7 +22,7 @@ the version of Spring is ``4.2.4.RELEASE`` pom file like following
 </dependency>
 ```
 web.xml in all these projects are same. We need add springMVC support
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://java.sun.com/xml/ns/javaee"
@@ -51,31 +51,31 @@ web.xml in all these projects are same. We need add springMVC support
 ---
 project structure
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─xml                                                                                                                                                                                              
-│  │              └─properties                                                                                                                                                                                   
-│  │                  └─util                                                                                                                                                                                     
-│  │                      └─tag                                                                                                                                                                                  
-│  │                              SimpleController.java                                                                                                                                                            
-│  │                                                                                                                                                                                                               
-│  ├─resources                                                                                                                                                                                                    
-│  │      spring-all.xml                                                                                                                                                                                           
-│  │      system.properties                                                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  └─webapp                                                                                                                                                                                                       
-│      │  index.jsp                                                                                                                                                                                                
-│      │                                                                                                                                                                                                           
-│      └─WEB-INF                                                                                                                                                                                                  
-│              web.xml                                                                                                                                                                                              
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─xml
+│  │              └─properties
+│  │                  └─util
+│  │                      └─tag
+│  │                              SimpleController.java
+│  │
+│  ├─resources 
+│  │      spring-all.xml
+│  │      system.properties
+│  │
+│  └─webapp
+│      │  index.jsp
+│      │
+│      └─WEB-INF
+│              web.xml
+│
+└─test                                                                                  
     └─java        
 ```
 spring-all.xml file
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -93,7 +93,7 @@ spring-all.xml file
 </beans>
 ```
 SimpleController.java
-```
+```java
 @Controller
 public class SimpleController {
     @Resource(name = "configProperties")
@@ -112,31 +112,31 @@ public class SimpleController {
 ---
 project structure
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─xml                                                                                                                                                                                              
-│  │              └─properties                                                                                                                                                                                   
-│  │                  └─factory                                                                                                                                                                                  
-│  │                      └─bean                                                                                                                                                                                 
-│  │                              SimpleController.java                                                                                                                                                            
-│  │                                                                                                                                                                                                               
-│  ├─resources                                                                                                                                                                                                    
-│  │      spring-all.xml                                                                                                                                                                                           
-│  │      system.properties                                                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  └─webapp                                                                                                                                                                                                       
-│      │  index.jsp                                                                                                                                                                                                
-│      │                                                                                                                                                                                                           
-│      └─WEB-INF                                                                                                                                                                                                  
-│              web.xml                                                                                                                                                                                              
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
-    └─java      
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─xml
+│  │              └─properties
+│  │                  └─factory
+│  │                      └─bean
+│  │                              SimpleController.java
+│  │
+│  ├─resources
+│  │      spring-all.xml
+│  │      system.properties
+│  │
+│  └─webapp
+│      │  index.jsp
+│      │
+│      └─WEB-INF
+│              web.xml
+│
+└─test
+    └─java
 ```
 spring-all.xml file
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -161,7 +161,7 @@ spring-all.xml file
 </beans>
 ```
 SimpleController.java
-```
+```java
 @Controller
 public class SimpleController {
     @Resource(name = "configProperties")
@@ -179,32 +179,32 @@ public class SimpleController {
 ---
 project structure
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─xml                                                                                                                                                                                              
-│  │              └─properties                                                                                                                                                                                   
-│  │                  └─property                                                                                                                                                                                 
-│  │                      └─placeholder                                                                                                                                                                          
-│  │                          └─configurer                                                                                                                                                                       
-│  │                                  SimpleController.java                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  ├─resources                                                                                                                                                                                                    
-│  │      spring-all.xml                                                                                                                                                                                           
-│  │      system.properties                                                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  └─webapp                                                                                                                                                                                                       
-│      │  index.jsp                                                                                                                                                                                                
-│      │                                                                                                                                                                                                           
-│      └─WEB-INF                                                                                                                                                                                                  
-│              web.xml                                                                                                                                                                                              
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─xml
+│  │              └─properties
+│  │                  └─property
+│  │                      └─placeholder
+│  │                          └─configurer
+│  │                                  SimpleController.java
+│  │
+│  ├─resources
+│  │      spring-all.xml
+│  │      system.properties
+│  │
+│  └─webapp
+│      │  index.jsp
+│      │
+│      └─WEB-INF
+│              web.xml
+│
+└─test                                                                                      
     └─java               
 ```
 spring-all.xml file
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -228,7 +228,7 @@ spring-all.xml file
 </beans>
 ```
 SimpleController.java
-```
+```xml
 @Controller
 public class SimpleController {
     @Value("${server.address}")
@@ -246,31 +246,31 @@ public class SimpleController {
 ---
 project structure
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─xml                                                                                                                                                                                              
-│  │              └─properties                                                                                                                                                                                   
-│  │                  └─configuration                                                                                                                                                                            
-│  │                      └─annotation                                                                                                                                                                           
-│  │                              SimpleController.java                                                                                                                                                            
-│  │                                                                                                                                                                                                               
-│  ├─resources                                                                                                                                                                                                    
-│  │      spring-all.xml                                                                                                                                                                                           
-│  │      system.properties                                                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  └─webapp                                                                                                                                                                                                       
-│      │  index.jsp                                                                                                                                                                                                
-│      │                                                                                                                                                                                                           
-│      └─WEB-INF                                                                                                                                                                                                  
-│              web.xml                                                                                                                                                                                              
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
-    └─java        
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─xml
+│  │              └─properties
+│  │                  └─configuration
+│  │                      └─annotation
+│  │                              SimpleController.java
+│  │
+│  ├─resources
+│  │      spring-all.xml
+│  │      system.properties
+│  │
+│  └─webapp
+│      │  index.jsp
+│      │
+│      └─WEB-INF
+│              web.xml
+│ 
+└─test
+   └─java        
 ```
 spring-all.xml file
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -286,7 +286,7 @@ spring-all.xml file
 </beans>
 ```
 SimpleController.java
-```
+```java
 @Controller
 @Configuration
 @PropertySource("classpath:system.properties")
