@@ -15,41 +15,41 @@ Java 7 + Maven + PostgreSQL + IntelliJ
 Create a maven project in Intellij and the structure like below.
 
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─mybatis                                                                                                                                                                                          
-│  │              │  Application.java                                                                                                                                                                             
-│  │              │                                                                                                                                                                                               
-│  │              ├─controller                                                                                                                                                                                   
-│  │              │      UserController.java                                                                                                                                                                      
-│  │              │                                                                                                                                                                                               
-│  │              ├─mapper                                                                                                                                                                                       
-│  │              │      UserMapper.java                                                                                                                                                                          
-│  │              │                                                                                                                                                                                               
-│  │              ├─model                                                                                                                                                                                        
-│  │              │      User.java                                                                                                                                                                                
-│  │              │                                                                                                                                                                                               
-│  │              └─service                                                                                                                                                                                      
-│  │                      UserService.java                                                                                                                                                                         
-│  │                                                                                                                                                                                                               
-│  └─resources                                                                                                                                                                                                    
-│      │  application.properties                                                                                                                                                                                   
-│      │  log4j.properties                                                                                                                                                                                         
-│      │                                                                                                                                                                                                           
-│      └─mybatis                                                                                                                                                                                                  
-│              UserMapper.xml                                                                                                                                                                                       
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
-    └─java   
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─mybatis
+│  │              │  Application.java
+│  │              │
+│  │              ├─controller
+│  │              │      UserController.java
+│  │              │
+│  │              ├─mapper
+│  │              │      UserMapper.java
+│  │              │
+│  │              ├─model
+│  │              │      User.java
+│  │              │
+│  │              └─service
+│  │                      UserService.java
+│  │
+│  └─resources
+│      │  application.properties
+│      │  log4j.properties
+│      │
+│      └─mybatis
+│              UserMapper.xml
+│
+└─test
+    └─java
 ```
 
 **Create table in your Database**
 
 I use following SQL to create a sample table in my Database. After
 creation insert a record in it.
-```
+```sql
 CREATE TABLE public.users (
   id INTEGER,
   name CHARACTER VARYING(20),
@@ -59,7 +59,7 @@ CREATE TABLE public.users (
 INSERT INTO users VALUES (1, 'user1', 27, 'password');
 ```
 **Dependencies in pom.xml file**
-```
+```xml
 <properties>
     <spring.boot.version>1.3.2.RELEASE</spring.boot.version>
 </properties>
@@ -98,7 +98,7 @@ DataSourceTransactionManager in Spring configuration file(*.xml). Here we use ``
 define them in class. The annotation ``@MapperScan`` will scan the interfaces in appointed
 directory. In DataSource Bean we get the Database configuration in properties file.
 The whole code of ``Application``:
-```
+```java
 @EnableAutoConfiguration
 @Configuration
 @ComponentScan(value = "com.henry.xi.mybatis")
@@ -137,7 +137,7 @@ public class Application {
 In Mybatis we use interface and mapper xml file to get record from database.
 
 UserMapper.xml
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.henry.xi.mybatis.mapper.UserMapper">
@@ -149,7 +149,7 @@ UserMapper.xml
 </mapper>
 ```
 UserMapper interface
-```
+```java
 public interface UserMapper {
     User findUserInfo();
 }
@@ -157,7 +157,7 @@ public interface UserMapper {
 **Create controller and model**
 
 controller and model is sample.
-```
+```java
 @Controller
 public class UserController {
 
@@ -179,7 +179,7 @@ public class UserController {
 }
 ```
 model as following
-```
+```java
 public class User {
     private String name;
     private Integer age;
