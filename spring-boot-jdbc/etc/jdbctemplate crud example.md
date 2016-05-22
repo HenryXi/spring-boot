@@ -5,7 +5,7 @@ you have to add DataSource config. In this tutorial we will show you how to use 
 You don't write a single line of XML. No web.xml file either.
 
 **init database**
-```
+```sql
 CREATE TABLE public.tb_user
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -18,24 +18,24 @@ CREATE TABLE public.tb_user
 
 There is not xml file in this project(no spring config, no web.xml)
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─jdbc                                                                                                                                                                                             
-│  │                  SimpleController.java                                                                                                                                                                        
-│  │                                                                                                                                                                                                               
-│  └─resources                                                                                                                                                                                                    
-│          application.properties                                                                                                                                                                                   
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
+├─main                                                                       
+│  ├─java                                                                              
+│  │  └─com
+│  │      └─henry 
+│  │          └─jdbc 
+│  │                  SimpleController.java
+│  │ 
+│  └─resources 
+│          application.properties
+│
+└─test
     └─java            
 ```
 
 **code in project**
 
 dependencies in pom file
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -69,7 +69,7 @@ You can define your own properties in ``application.properties`` or in other pro
 value from properties in **Spring**? Click [here](http://www.henryxi.com/read-values-from-properties-file-in-spring))
 
 SimpleController
-```
+```java
 @RestController
 @EnableAutoConfiguration
 public class SimpleController {
