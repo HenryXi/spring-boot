@@ -27,7 +27,7 @@ spring.datasource.password=postgres
 spring.datasource.driver-class-name=org.postgresql.Driver
 ```
 **init database(PostgreSQL)**
-```
+```sql
 CREATE TABLE public.tb_user
 (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -41,7 +41,7 @@ JdbcTemplate CRUD examples click [here](http://www.henryxi.com/jdbctemplate-exam
 Install PostgreSQL and configure click [here](http://www.henryxi.com/install-and-configure-postgresql-on-linux)
 
 **pom.xml file**
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -67,7 +67,7 @@ Install PostgreSQL and configure click [here](http://www.henryxi.com/install-and
 **java class**
 
 QueryController
-```
+```java
 @RestController
 @EnableAutoConfiguration
 public class QueryController {
@@ -186,7 +186,7 @@ public class QueryController {
 }
 ```
 User.java is an entity
-```
+```java
 public class User {
     private int id;
     private String username;
