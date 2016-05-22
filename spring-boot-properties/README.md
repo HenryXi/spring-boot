@@ -15,27 +15,27 @@ the value in properties file.
 Create a maven project in Intellij, make structure as following.
 
 ```
-├─main                                                                                                                                                                                                             
-│  ├─java                                                                                                                                                                                                         
-│  │  └─com                                                                                                                                                                                                      
-│  │      └─henry                                                                                                                                                                                                
-│  │          └─properties                                                                                                                                                                                       
-│  │                  DefaultProperties.java                                                                                                                                                                       
-│  │                  SimpleController.java                                                                                                                                                                        
-│  │                  SpecialProperties.java                                                                                                                                                                       
-│  │                                                                                                                                                                                                               
-│  └─resources                                                                                                                                                                                                    
-│          application.properties                                                                                                                                                                                   
-│          server.properties                                                                                                                                                                                        
-│                                                                                                                                                                                                                   
-└─test                                                                                                                                                                                                             
-    └─java          
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─henry
+│  │          └─properties
+│  │                  DefaultProperties.java
+│  │                  SimpleController.java
+│  │                  SpecialProperties.java
+│  │
+│  └─resources
+│          application.properties
+│          server.properties
+│
+└─test
+    └─java
 ```
 
 
 **Dependencies in pom.xml file**
 
-```
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
@@ -52,13 +52,13 @@ like ``server.properties``. I recommend you create another properties to save yo
 own properties.
 
 content of application.properties
-```
+```ini
 server.info.address=192.168.1.1
 server.info.username=user1
 server.info.password=password
 ```
 content of server.properties
-```
+```ini
 server.info.address=192.168.1.2
 server.info.username=user2
 server.info.password=password2
@@ -68,7 +68,7 @@ server.info.password=password2
 
 In order to load properties in class we create ``DefaultProperties`` class. Make
 the properties in ``DefaultProperties`` and ``application.properties`` match.
-```
+```java
 @Configuration
 @ConfigurationProperties(prefix = "server.info")
 public class DefaultProperties {
@@ -92,7 +92,7 @@ public class DefaultProperties {
 properties file. Use ``prefix`` define special prefix to match properties in configuration
 file. If you want get properties from special file instead of ``application.properties``.
 You can create ``SpecialProperties`` as following.
-```
+```java
 @Configuration
 @ConfigurationProperties(locations="classpath:server.properties",prefix = "server.info")
 public class SpecialProperties {
@@ -115,7 +115,7 @@ public class SpecialProperties {
 The only difference is add ``locations`` property in ``@ConfigurationProperties``.
 
 In order to start this project we need a controller.
-```
+```java
 @RestController
 @EnableAutoConfiguration
 @ComponentScan(value = "com.henry.xi.properties")
