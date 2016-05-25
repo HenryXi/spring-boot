@@ -26,6 +26,23 @@ beginning we use Spring Boot, and for displaying pdf we use jsp as view.(How to 
 └─test
     └─java
 ```
+##### pom file
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    <version>8.0.28</version>
+</dependency>
+```
 ##### Java code
 ```java
 @Controller
