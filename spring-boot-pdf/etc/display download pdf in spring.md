@@ -3,7 +3,7 @@ In this tutorial I will show you how to display and download pdf file in Spring(
 beginning we use Spring Boot, and for displaying pdf we use jsp as view.(How to use jsp in Spring Boot, click
 [Spring Boot JSP examples](http://www.henryxi.com/spring-boot-jsp-examples)). 
 
-## Project structure
+##### Project structure
 ```
 ├─main
 │  ├─java
