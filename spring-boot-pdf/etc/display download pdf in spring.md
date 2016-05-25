@@ -1,4 +1,4 @@
-# Display download PDF in Spring example
+# Display PDF in Spring example
 In this tutorial I will show you how to display and download pdf file in Spring(Spring MVC). For quick
 beginning we use Spring Boot, and for displaying pdf we use jsp as view.(How to use jsp in Spring Boot, click
 [Spring Boot JSP examples](http://www.henryxi.com/spring-boot-jsp-examples)). 
