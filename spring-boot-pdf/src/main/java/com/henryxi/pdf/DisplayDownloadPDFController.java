@@ -15,7 +15,7 @@ import java.io.InputStream;
 
 @Controller
 @EnableAutoConfiguration
-public class DisplayDownloadPDFController extends SpringBootServletInitializer {
+public class DisplayDownloadPDFController{
 
     @RequestMapping("/")
     public String index() {
