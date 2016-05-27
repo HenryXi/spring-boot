@@ -12,8 +12,8 @@
     <artifactId>spring-boot-mongodb</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>custom-repository</module>
-        <module>keywords-repository</module>
+        <module>mongo-repository</module>
+        <module>mongo-template</module>
     </modules>
 
     <dependencies>
