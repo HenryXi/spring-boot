@@ -18,9 +18,9 @@ public class QueryClient implements CommandLineRunner {
     }
 
     public void run(String... strings) throws Exception {
+        // save data
         User henry = new User("Henry", 27);
         userRepository.save(henry);
-
         Address beijing = new Address("China", "Beijing");
         Address shanghai = new Address("China", "Shanghai");
         User justin = new User("Justin", 28, beijing);
@@ -30,8 +30,23 @@ public class QueryClient implements CommandLineRunner {
         users.add(mathew);
         userRepository.save(users);
 
-        List<User> usersInDB = userRepository.findByName("Henry");
+        //delete data
+        String justinId = justin.getId();
+        justin.setId("123456");
+        userRepository.delete(justin);//delete fail when change the id
+        userRepository.delete(justinId);
 
-        System.out.println(usersInDB.toString());
+        //query data
+        List<User> usersInDB = userRepository.findByAge(23L);
+        String id = usersInDB.get(0).getId();
+        User user = userRepository.findOne(id);
+        System.out.println(user);
+
+        //update data
+        User updateUser = userRepository.findOne(id);
+        updateUser.setName("new name");//update date need query it first
+        userRepository.save(updateUser);
+        User newUser = userRepository.findOne(id);
+        System.out.println(newUser);
     }
 }
