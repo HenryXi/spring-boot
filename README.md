@@ -15,6 +15,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [JdbcTemplate simple CRUD](http://www.henryxi.com/jdbctemplate-examples-in-spring-boot)
 * [JdbcTemplate query examples](http://www.henryxi.com/jdbctemplate-query-examples)
 * [JdbcTemplate batch update](http://www.henryxi.com/jdbctemplate-batch-update-example)
+* [Difference between @Controller and @RestController](http://www.henryxi.com/difference-between-controller-and-restcontroller)
 * [Use Mybatis in Spring Boot](http://www.henryxi.com/use-mybatis-in-spring-boot)
 * [Spring MongoRepository example](http://www.henryxi.com/spring-mongorepository-example)
 
