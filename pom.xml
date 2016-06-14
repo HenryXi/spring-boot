@@ -25,6 +25,7 @@
         <module>spring-boot-upload</module>
         <module>spring-boot-mongodb</module>
         <module>spring-boot-pdf</module>
+        <module>spring-boot-misc</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.3.RELEASE</spring.boot.version>
