@@ -1,39 +1,18 @@
-# Spring MongoTemplate example
-`MongoTemplate` can help you CURD documents in MongoDB easily. In this page I will show you how to use it. 
-I would recommend you to learn [Mongo tutorial](http://www.henryxi.com/mongodb-tutorial) first, if you are 
-unfamiliar with commends in MongoDB. For quick start I use Spring Boot to test MongoTemplate. 
+package com.henryxi.mongo.template;
 
-**project structure**
-```
-└─main
-    ├─java
-    │  └─com
-    │      └─henryxi
-    │          └─mongo
-    │              └─template
-    │                      Address.java
-    │                      QueryClient.java
-    │                      User.java
-    │
-    └─resources
-            application.properties
-```
-**pom**
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-mongodb</artifactId>
-    <version>1.3.3.RELEASE</version>
-</dependency>
-```
-**application.properties**
-```ini
-spring.data.mongodb.host=localhost
-spring.data.mongodb.port=27017
-spring.data.mongodb.database=user_database
-```
-**MongoTemplate example code**
-```java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.core.FindAndModifyOptions;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
+
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 public class QueryClient implements CommandLineRunner {
     @Autowired
@@ -89,4 +68,3 @@ public class QueryClient implements CommandLineRunner {
         System.out.println(newCharles);
     }
 }
-```

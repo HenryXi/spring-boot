@@ -1,4 +1,4 @@
-package mongodb.custom.repository;
+package com.henryxi.mongo.template;
 
 import org.springframework.data.annotation.Id;
 
@@ -7,6 +7,29 @@ public class User {
     private String id;
     private String name;
     private int age;
+    private Address address;
+
+    public User() {
+    }
+
+    public User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public User(String name, int age, Address address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 
     public String getId() {
         return id;
