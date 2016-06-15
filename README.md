@@ -28,3 +28,4 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring Boot upload file with form example](http://www.henryxi.com/spring-boot-upload-file-with-form-example)
 * [Spring Boot upload file with ajax example](http://www.henryxi.com/spring-boot-upload-file-with-ajax-example)
 * [Display PDF in Spring example](http://www.henryxi.com/display-pdf-in-spring-example)
+* [Spring boot parse POST json example](http://www.henryxi.com/spring-boot-parse-post-json-example)
