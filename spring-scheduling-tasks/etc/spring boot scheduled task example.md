@@ -97,10 +97,10 @@ Wait 10s report time:10:03:03
 Report time every 5s:10:03:03
 Report time every 5s after last task success:10:03:03
 ```
-`@Scheduled(fixedRate = 5000)` on `reportTimeEvery5s` method means this method will executed every 5 seconds.
-`@Scheduled(fixedDelay = 5000)` on `reportTimeEvery5sAfterLastTaskSuccess` method means this method will executed after last
-task execute successfully 5 seconds. if Last task is still running the new task won't executed.
-`@Scheduled(initialDelay = 10000, fixedRate = 5000)` on `wait10sReportTime` method means this method will "wait" 10 seconds
+* `@Scheduled(fixedRate = 5000)` on `reportTimeEvery5s` method means this method will executed every 5 seconds.
+* `@Scheduled(fixedDelay = 5000)` on `reportTimeEvery5sAfterLastTaskSuccess` method means this method will executed after last
+    task execute successfully 5 seconds. if Last task is still running the new task won't executed.
+* `@Scheduled(initialDelay = 10000, fixedRate = 5000)` on `wait10sReportTime` method means this method will "wait" 10 seconds
 then begin executing every 5 seconds.
-`@Scheduled(cron="*/5 * * * * MON-FRI")` on `reportTimeByCron` method means this method will executed like corn
+* `@Scheduled(cron="*/5 * * * * MON-FRI")` on `reportTimeByCron` method means this method will executed like corn
 expression described.
