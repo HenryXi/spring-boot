@@ -20,6 +20,14 @@ in Spring.
 └─test
     └─java
 ```
+**pom**
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>1.3.3.RELEASE</version>
+</dependency>
+```
 **Application**
 ```java
 @SpringBootApplication
