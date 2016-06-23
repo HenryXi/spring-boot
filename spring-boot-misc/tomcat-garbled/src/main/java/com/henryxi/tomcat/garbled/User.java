@@ -7,8 +7,8 @@ public class User implements Serializable {
     private static final long serialVersionUID = 8441652676482786072L;
     private String name;
     private String address;
-    User(){}
-    User(String name, String address) {
+    public User(){}
+    public User(String name, String address) {
         this.name = name;
         this.address = address;
     }

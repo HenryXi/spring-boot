@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	server started.
+	<form action="/http-post-form-urlencoded" method="post">
+		name:<input id="name" name="name" type="text"/><br>
+		address:<input id="address" name="address" type="text"/><br>
+		<input type="submit" value="submit">
+	</form>
 </body>
 </html>
