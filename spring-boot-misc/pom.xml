@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>post-json</module>
+        <module>tomcat-garbled</module>
     </modules>
     <artifactId>spring-boot-misc</artifactId>
 
