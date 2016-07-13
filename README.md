@@ -22,6 +22,7 @@ In This tutorial we will show you how to use spring boot step by step.
 **show page**
 
 * [Spring Boot JSP examples](http://www.henryxi.com/spring-boot-jsp-examples)
+* [Spring Boot http status code](http://www.henryxi.com/spring-boot-http-status-code)
 
 **commonly-used function**
 
