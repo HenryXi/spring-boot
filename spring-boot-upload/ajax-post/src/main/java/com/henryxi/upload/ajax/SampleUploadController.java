@@ -1,4 +1,4 @@
-package com.henryxi.mongodb.upload.ajax;
+package com.henryxi.upload.ajax;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
