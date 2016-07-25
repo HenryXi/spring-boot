@@ -39,7 +39,7 @@
 
     $("#serializeAndPost").click(function () {
         x = $("form").serializeArray();
-        $.post('http://localhost:8090/post-json', x, function (data) {
+        $.post('post-json', x, function (data) {
             $('#content').html(data);
         })
     });
