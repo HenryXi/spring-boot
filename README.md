@@ -31,3 +31,4 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Display PDF in Spring example](http://www.henryxi.com/display-pdf-in-spring-example)
 * [Spring boot parse POST json example](http://www.henryxi.com/spring-boot-parse-post-json-example)
 * [Ajax post json xml to springMVC](http://www.henryxi.com/ajax-post-json-xml-to-springmvc)
+* [Ajax post serialized form to SpringMVC](http://www.henryxi.com/ajax-post-serialized-form-to-springmvc)
