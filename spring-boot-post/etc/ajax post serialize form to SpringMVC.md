@@ -4,9 +4,9 @@ serialized form data to SpringMVC. In this way your application will be more fri
 
 **controller**
 ```java
-@RequestMapping(path = "/post-xml", method = RequestMethod.POST)
+@RequestMapping(path = "/post-json", method = RequestMethod.POST)
 @ResponseBody
-public String postXml(@RequestBody User user) throws IOException {
+public String postJson(User user) {
     return user.toString();
 }
 ```
