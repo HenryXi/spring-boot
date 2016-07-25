@@ -11,6 +11,8 @@
 <input id="postXmlBtn" type="button" value="post xml">
 <br>
 <input id="postJsonBtn" type="button" value="post json">
+<br>
+<input id="serializeAndPost" type="button" value="serialize and post">
 <div id="content"></div>
 <script type="application/javascript">
     $('#postXmlBtn').click(function () {
@@ -34,6 +36,17 @@
             $('#content').html(data);
         })
     });
+
+    $("#serializeAndPost").click(function () {
+        x = $("form").serializeArray();
+        $.post('http://localhost:8090/post-json', x, function (data) {
+            $('#content').html(data);
+        })
+    });
 </script>
+<form action="">
+    name: <input type="text" name="name" value="HenryXi"/><br/>
+    age : <input type="text" name="age" value="28"/><br/>
+</form>
 </body>
 </html>
