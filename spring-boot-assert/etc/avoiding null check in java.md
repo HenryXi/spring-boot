@@ -1,6 +1,6 @@
 # Avoiding null check in java
-There are lot of null check in my project. They are very ugly. For example If you want print out the address of user.
-(ORM)hibernate or mybatis will help you query this user info include address info. You may get an user entity like following.
+There is lots of ugly null checking in my project. For example if you want print out the address of user. ORM 
+(Hibernate or MyBatis) will help you query this user with address info. You may get a user entity like following.
 ```java
 public class User {
     private String id;
@@ -37,7 +37,7 @@ if(user != null && user.getAddress() != null){
     System.out.println("can not get address of user");
 }
 ```
-Much better then the first one. I want avoiding null check 100% in my code. After searching on google I found one solution.
+It looks much better than the first one. I want avoiding null check 100% in my code. After searching on google I found one solution
 ##### Using `assert` to avoid NullPointerException(not recommend)
 By using assert keyword the code will be like following.
 ```java
@@ -45,7 +45,7 @@ assert user !=null : "user is null";
 assert user.getAddress() != null : "address of user is null";
 System.out.println(user.getAddress().getCity());
 ```
-Looks very nice. But you have to add `-ea` in java configuration to enable assert. This configuration is disable by default
+It looks very nice. But you have to add `-ea` in java configuration to enable assert. This configuration is disabled by default
 And if user or the address of user is null this piece of code will throw `AssertionError`. Even more unfortunate is 
 `AssertionError` extend `Error`(can not be catch).
 ##### Using `org.springframework.util.Assert` to avoid null check(recommend)
