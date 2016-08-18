@@ -29,6 +29,7 @@
         <module>spring-scheduling-tasks</module>
         <module>spring-boot-http-status-code</module>
         <module>spring-boot-post</module>
+        <module>spring-boot-assert</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.3.RELEASE</spring.boot.version>
