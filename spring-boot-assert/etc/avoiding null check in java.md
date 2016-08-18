@@ -59,3 +59,4 @@ try {
     System.out.println(e.getMessage());
 }
 ```
+If you have a better way please tell me. 
