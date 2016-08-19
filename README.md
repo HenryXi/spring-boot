@@ -5,10 +5,11 @@ In This tutorial we will show you how to use spring boot step by step.
 
 * [Quick Start](http://www.henryxi.com/build-a-restful-spring-project-in-1-minute) 
 
-**read properties file**
+**resource file**
 
 * [Read properties in Spring Boot](http://www.henryxi.com/spring-boot-configurationproperties-example)
 * [Read properties in Spring](http://www.henryxi.com/read-values-from-properties-file-in-spring) 
+* [Spring Boot get resource file example](http://www.henryxi.com/spring-boot-get-resource-file-example)
 
 **working with databases**
 
