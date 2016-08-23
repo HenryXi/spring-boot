@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @EnableAutoConfiguration
-@ComponentScan(value = "com.henry.xi.properties")
+@ComponentScan(value = "com.henry.properties")
 public class SimpleController {
     @Autowired
     private DefaultProperties defaultProperties;
