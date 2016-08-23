@@ -12,4 +12,4 @@ server.port=8090
 -Dserver.port=8090
 ```
 
-For configuration of Spring Boot you can click [here] for more detail.
+For configuration of Spring Boot you can click [here](http://docs.spring.io/spring-boot/docs/1.3.3.RELEASE/reference/html/common-application-properties.html) for more detail.
