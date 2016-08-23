@@ -10,6 +10,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Read properties in Spring Boot](http://www.henryxi.com/spring-boot-configurationproperties-example)
 * [Read properties in Spring](http://www.henryxi.com/read-values-from-properties-file-in-spring) 
 * [Spring Boot get resource file example](http://www.henryxi.com/spring-boot-get-resource-file-example)
+* [Spring Boot change default port](http://www.henryxi.com/spring-boot-change-default-port)
 
 **working with databases**
 
