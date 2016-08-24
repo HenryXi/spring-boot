@@ -8,8 +8,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>spring-boot-pdf</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>pdf</module>
+        <module>download</module>
+    </modules>
+    <artifactId>spring-boot-download</artifactId>
 
     <dependencies>
         <dependency>

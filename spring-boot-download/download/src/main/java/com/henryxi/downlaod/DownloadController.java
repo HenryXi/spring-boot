@@ -1,9 +1,8 @@
-package com.henryxi.pdf;
+package com.henryxi.downlaod;
 
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,20 +14,15 @@ import java.io.InputStream;
 
 @Controller
 @EnableAutoConfiguration
-public class DisplayDownloadPDFController{
-
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
+public class DownloadController {
 
     @RequestMapping(value = "/download", method = RequestMethod.GET)
     public void getFile(HttpServletResponse response) {
         try {
             DefaultResourceLoader loader = new DefaultResourceLoader();
-            InputStream is = loader.getResource("classpath:META-INF/resources/Accepted.pdf").getInputStream();
+            InputStream is = loader.getResource("classpath:target_file.txt").getInputStream();
             IOUtils.copy(is, response.getOutputStream());
-            response.setHeader("Content-Disposition", "attachment; filename=Accepted.pdf");
+            response.setHeader("Content-Disposition", "attachment; filename='target_file.exe'");
             response.flushBuffer();
         } catch (IOException ex) {
             throw new RuntimeException("IOError writing file to output stream");
@@ -36,6 +30,6 @@ public class DisplayDownloadPDFController{
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(DisplayDownloadPDFController.class, args);
+        SpringApplication.run(DownloadController.class, args);
     }
 }
