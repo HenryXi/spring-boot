@@ -24,7 +24,7 @@
         <module>spring-boot-thread</module>
         <module>spring-boot-upload</module>
         <module>spring-boot-mongodb</module>
-        <module>spring-boot-pdf</module>
+        <module>spring-boot-download</module>
         <module>spring-boot-misc</module>
         <module>spring-scheduling-tasks</module>
         <module>spring-boot-http-status-code</module>
