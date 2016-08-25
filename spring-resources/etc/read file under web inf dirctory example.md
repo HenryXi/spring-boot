@@ -1,6 +1,6 @@
 # Read file under WEB-INF directory example
 For JavaEE project you can request the file under project directory except the file under WEB-INF. Put the file under
-WEB-INF directory if you do not want others informal access it. The question is how to access it in project. This blog
+WEB-INF directory if you do not want others to access it informally. The question is how to access it in project. This blog
  will show you how to access the file under WEB-INF directory programmatically.
 
 **Project structure**
