@@ -1,0 +1,1 @@
+This is the file in the directory /WEB-INF/target_file.txt.
