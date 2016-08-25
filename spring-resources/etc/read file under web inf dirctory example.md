@@ -3,7 +3,7 @@ For JavaEE project you can request the file under project directory except the f
 WEB-INF directory if you do not want others informal access it. The question is how to access it in project. This blog
  will show you how to access the file under WEB-INF directory programmatically.
 
-**project structure**
+**Project structure**
 ```
 ├─main
 │  ├─java
@@ -47,4 +47,5 @@ Start this project and access localhost:8080/WEB-INF-file you will get the resul
 the content of resources:This is the file in the directory /WEB-INF/target_file.txt.
 ```
 The most important part of code is `resourceLoader.getResource("/WEB-INF/target_file.txt")`. This line means read the 
-file `target_file.txt`.
+file `target_file.txt` by using `resourceLoader`. In order to show the content you can convert the input stream to string
+or write the content to response directory. (I choose the former approach) 
