@@ -12,6 +12,7 @@
     <modules>
         <module>post-json</module>
         <module>tomcat-garbled</module>
+        <module>forward-redirect</module>
     </modules>
     <artifactId>spring-boot-misc</artifactId>
 
