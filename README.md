@@ -26,6 +26,7 @@ In This tutorial we will show you how to use spring boot step by step.
 
 * [Spring Boot JSP examples](http://www.henryxi.com/spring-boot-jsp-examples)
 * [Spring Boot http status code](http://www.henryxi.com/spring-boot-http-status-code)
+* [Spring MVC forward redirect example](http://www.henryxi.com/spring-mvc-forward-redirect-example)
 
 **commonly-used function**
 
