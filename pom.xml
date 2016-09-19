@@ -32,6 +32,7 @@
         <module>spring-boot-assert</module>
         <module>spring-boot-resources</module>
         <module>spring-resources</module>
+        <module>spring-unit-test</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.3.RELEASE</spring.boot.version>
