@@ -80,5 +80,5 @@ One important thing to note about test class is `@ContextConfiguration(locations
  will find the `spring-all.xml` in "test/resources/" if not found then find it in "main/resources". If Spring won't find
  the xml file in either of them `FileNotFoundException` will be thrown.
 
-Run the test class you can validate the logic is true or not. In our example we just validate the spring is equal to
+Run the test class you can validate the logic is true or not. In our example we just validate the string is equal to
 "this is service method". 
