@@ -85,7 +85,7 @@ public class SampleController extends SpringBootServletInitializer {
 }
 ```
 
-Run the main method in `AppConfig` class and access "localhost:8090/intercept". The log like following.
+Run the main method in `AppConfig` class and access "localhost:8080/intercept". The log like following.
 ```
 this is interceptor, preHandle method
 this is controller, request path is intercept
