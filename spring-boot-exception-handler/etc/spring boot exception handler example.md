@@ -92,6 +92,7 @@ public class SampleController extends SpringBootServletInitializer {
 ```
 You can define which exception will be handled by using `ExceptionHandler`. Access `http://localhost:8090/exception` 
 the method `exception` will throw `Exception` and `handleException` will handle this exception.
+
 Access `http://localhost:8090/exception`
 ```
 this is exception
