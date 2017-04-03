@@ -18,6 +18,14 @@ to display the page. The structure of project is like following.
 └─test
     └─java
 ```
+**pom.xml**
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    <spring.boot.version>1.3.3.RELEASE</spring.boot.version>
+</dependency>
+```
 **SimpleController.java**
 ```java
 @SpringBootApplication
