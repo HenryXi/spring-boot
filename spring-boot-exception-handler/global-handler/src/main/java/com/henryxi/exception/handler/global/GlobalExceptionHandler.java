@@ -9,12 +9,12 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public String handleException(Exception e) {
-        return e.getMessage();
+        return "this is from exception handler, message:" + e.getMessage();
     }
 
     @ExceptionHandler(CustomException.class)
     @ResponseBody
     public String handleException(CustomException e) {
-        return e.getMessage();
+        return "this is from exception handler, message:" + e.getMessage();
     }
 }
