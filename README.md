@@ -39,6 +39,9 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring boot scheduled tasks example](http://www.henryxi.com/spring-boot-scheduled-tasks-example)
 * [Download file in Spring MVC example](http://www.henryxi.com/download-file-in-spring-mvc-example)
 * [Spring Boot interceptor example](http://www.henryxi.com/spring-boot-interceptor-example)
+* [Spring Boot exception handler example](http://www.henryxi.com/spring-boot-exception-handler-example)
+* [Spring Boot global exception example](http://www.henryxi.com/spring-boot-global-exception-example)
+* [Spring Boot Thymeleaf example](http://www.henryxi.com/spring-boot-thymeleaf-example)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
