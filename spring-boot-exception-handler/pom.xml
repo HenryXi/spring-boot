@@ -14,6 +14,7 @@
     <modules>
         <module>controller-handler</module>
         <module>global-handler</module>
+        <module>exception-resolver</module>
     </modules>
     <dependencies>
         <dependency>
