@@ -1,8 +1,6 @@
 package com.henry.mybatis.model;
 
-/**
- * Created by zl on 2015/8/27.
- */
+
 public class User {
     private String name;
     private Integer age;
