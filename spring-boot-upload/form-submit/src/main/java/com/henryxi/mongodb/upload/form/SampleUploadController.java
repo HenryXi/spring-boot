@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,7 +21,7 @@ public class SampleUploadController extends SpringBootServletInitializer {
         return "upload";
     }
 
-    @RequestMapping("/upload")
+    @RequestMapping(value = "/upload", method = RequestMethod.POST)
     @ResponseBody
     public String upload(@RequestParam("file") MultipartFile file) {
         try {
@@ -29,7 +30,7 @@ public class SampleUploadController extends SpringBootServletInitializer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "file name:" + file.getOriginalFilename() +"<br> read file content error.";
+        return "file name:" + file.getOriginalFilename() + "<br> read file content error.";
     }
 
     public static void main(String[] args) throws Exception {
