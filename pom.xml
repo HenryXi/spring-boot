@@ -18,7 +18,6 @@
         <module>spring-boot-unit-test</module>
         <module>spring-boot-properties</module>
         <module>security</module>
-        <module>actuator</module>
         <module>spring-boot-jdbc</module>
         <module>spring-properties</module>
         <module>spring-boot-thread</module>
