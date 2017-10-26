@@ -42,6 +42,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring Boot exception handler example](http://www.henryxi.com/spring-boot-exception-handler-example)
 * [Spring Boot global exception example](http://www.henryxi.com/spring-boot-global-exception-example)
 * [Spring Boot Thymeleaf example](http://www.henryxi.com/spring-boot-thymeleaf-example)
+* [Spring ResponseBody without null field](http://www.henryxi.com/spring-responsebody-without-null-field)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
