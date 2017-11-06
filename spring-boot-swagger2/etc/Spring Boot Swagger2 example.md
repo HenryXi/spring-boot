@@ -1,6 +1,6 @@
 # Spring Boot Swagger2 example
 [Swagger](https://swagger.io/) can help you generate document for your restful API. This blog will show you how to use it. I assume that
-you have know how to use Spring Boot. The structure of example project is like following.
+you have known how to use Spring Boot. The structure of example project is like following.
 ```
 ├─main
 │  ├─java
