@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 
 @EnableAutoConfiguration
 @Configuration
-@ComponentScan(value = "com.henry.xi.mybatis")
+@ComponentScan(value = "com.henry.mybatis")
 @MapperScan("com.henry.xi.mybatis")
 public class Application {
     private static Logger logger = Logger.getLogger(Application.class);
