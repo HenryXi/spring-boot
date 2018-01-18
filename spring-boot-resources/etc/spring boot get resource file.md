@@ -20,6 +20,21 @@ in Spring. As using maven build the project all resource file are put in resourc
     └─java
 ```
 
+**pom.xml**
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.4</version>
+    </dependency>
+</dependencies>
+```
+
 **resourcesController.java**
 ```java
 @RestController
