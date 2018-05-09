@@ -44,6 +44,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring Boot Thymeleaf example](http://www.henryxi.com/spring-boot-thymeleaf-example)
 * [Spring ResponseBody without null field](http://www.henryxi.com/spring-responsebody-without-null-field)
 * [Spring Boot Swagger2 example](http://www.henryxi.com/spring-boot-swagger2-example)
+* [Spring Boot log4j2 example](http://www.henryxi.com/spring-boot-log4j2-example)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
