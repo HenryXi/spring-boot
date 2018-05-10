@@ -6,7 +6,7 @@ public class ShowNextRunTimeClient {
     public static void main(String[] args) {
         String cronExpr = "*/5 * * * * *";
         CronSequenceGenerator generator = new CronSequenceGenerator(cronExpr);
-        System.out.println("now time:\t\t" + new Date());
+        System.out.println("now time:\t" + new Date());
         Date next = generator.next(new Date());
         System.out.println("next run time:\t" + next);
     }
@@ -14,8 +14,8 @@ public class ShowNextRunTimeClient {
 ```
 output
 ```
-now time:		Thu May 10 16:24:20 CST 2018
-next run time:	Thu May 10 16:24:25 CST 2018
+now time:	Thu May 10 16:25:53 CST 2018
+next run time:	Thu May 10 16:25:55 CST 2018
 ```
 
 EOF
