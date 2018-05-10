@@ -45,6 +45,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring ResponseBody without null field](http://www.henryxi.com/spring-responsebody-without-null-field)
 * [Spring Boot Swagger2 example](http://www.henryxi.com/spring-boot-swagger2-example)
 * [Spring Boot log4j2 example](http://www.henryxi.com/spring-boot-log4j2-example)
+* [Spring get next run time by cron expression](http://www.henryxi.com/spring-get-next-run-time-by-cron-expression)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
