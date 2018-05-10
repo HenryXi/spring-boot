@@ -13,6 +13,8 @@
     <modules>
         <module>annotation</module>
         <module>xml</module>
+        <module>../show-next-run-time</module>
+        <module>show-next-run-time</module>
     </modules>
     <dependencies>
         <dependency>
