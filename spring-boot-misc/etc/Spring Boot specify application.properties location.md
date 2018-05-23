@@ -29,7 +29,12 @@ You can use `java -jar YOUR_PACKAGE_NAME.jar` to start this project. The output 
 2018-05-23 11:24:43.998  INFO 3446 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
 ```
 We can see the default port is 8080. I add the config file `application.properties` in "spring_config" directory and assign it when
-run `java -jar` like `java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar YOUR_PACKAGE_NAME.jar `.
+run `java -jar`.
+The content of `application.properties` is like following.
+```
+server.port=8090
+```
+run `java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar YOUR_PACKAGE_NAME.jar `.
 ```bash
 [root@virtual tmp]# java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar post-json-1.0-SNAPSHOT.jar 
 
