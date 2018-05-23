@@ -34,7 +34,8 @@ The content of `application.properties` is like following.
 ```
 server.port=8090
 ```
-run `java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar YOUR_PACKAGE_NAME.jar `.
+run `java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar YOUR_PACKAGE_NAME.jar `. As the log
+output the port is changed tobe 8090.
 ```bash
 [root@virtual tmp]# java -Dspring.config.location=file:/tmp/spring_config/application.properties -jar post-json-1.0-SNAPSHOT.jar 
 
