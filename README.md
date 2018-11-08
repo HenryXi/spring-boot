@@ -50,3 +50,6 @@ In This tutorial we will show you how to use spring boot step by step.
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
+
+**misc**
+* [Spring Boot maven plugin example](http://www.henryxi.com/spring-boot-maven-plugin-example)
