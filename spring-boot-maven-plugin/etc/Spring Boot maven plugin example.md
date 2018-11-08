@@ -20,7 +20,7 @@
                         <goal>repackage</goal>
                     </goals>
                     <configuration>
-                        <mainClass>com.henryxi.mavenplugin.TestController</mainClass>
+                        <mainClass>com.henryxi.mavenplugin.TestController</mainClass> <!-- your main method -->
                     </configuration>
                 </execution>
             </executions>
