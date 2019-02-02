@@ -34,6 +34,7 @@
         <module>spring-boot-swagger2</module>
         <module>spring-boot-log4j2</module>
         <module>spring-boot-maven-plugin</module>
+        <module>spring-boot-async</module>
     </modules>
     <properties>
         <spring.boot.version>1.3.3.RELEASE</spring.boot.version>
