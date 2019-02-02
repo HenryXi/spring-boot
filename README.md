@@ -47,6 +47,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring Boot log4j2 example](http://www.henryxi.com/spring-boot-log4j2-example)
 * [Spring get next run time by cron expression](http://www.henryxi.com/spring-get-next-run-time-by-cron-expression)
 * [Spring Boot specify application.properties location](http://www.henryxi.com/spring-boot-specify-applicationproperties-location)
+* [Spring Boot async example](http://www.henryxi.com/spring-boot-async-example)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
