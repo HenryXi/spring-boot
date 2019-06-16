@@ -1,4 +1,4 @@
-# Spring Boot filter(WebFilter annotation) example
+# Spring Boot filter WebFilter annotation example
 There is an embedded tomcat in Spring Boot. We can not edit `web.xml` to add a filter. In this page I will show you how to
 add filter in Spring Boot without `web.xml`. I use `WebFilter` annotation to add filter. After adding this annotation you
 have to add `ServletComponentScan` annotation to make Spring Boot find this filter.

@@ -48,7 +48,7 @@ In This tutorial we will show you how to use spring boot step by step.
 * [Spring get next run time by cron expression](http://www.henryxi.com/spring-get-next-run-time-by-cron-expression)
 * [Spring Boot specify application.properties location](http://www.henryxi.com/spring-boot-specify-applicationproperties-location)
 * [Spring Boot async example](http://www.henryxi.com/spring-boot-async-example)
-* [Spring Boot filter(WebFilter annotation) example](hhttp://www.henryxi.com/spring-boot-filterwebfilter-annotation-example)
+* [Spring Boot filter WebFilter annotation example](http://www.henryxi.com/spring-boot-filter-webfilter-annotation-example)
 
 **test**
 * [Spring unit test example](http://www.henryxi.com/spring-unit-test-example)
