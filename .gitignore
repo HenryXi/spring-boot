@@ -6,7 +6,7 @@ koss-root.ids
 .idea
 */*.log
 buildNumber.properties
-*/target/
+*target/
 /sh/
 /esb/*
 /document
