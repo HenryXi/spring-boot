@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
     @RequestMapping(path = "/get", method = RequestMethod.GET)
     public String get() {
-        return "This is Get response from 8081";
+        return "This is Get response from 8080";
     }
 
     public static void main(String[] args) throws Exception {
