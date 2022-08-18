@@ -55,3 +55,4 @@ In This tutorial we will show you how to use spring boot step by step.
 
 **misc**
 * [Spring Boot maven plugin example](http://www.henryxi.com/spring-boot-maven-plugin-example)
+* [Spring EventListener example](http://www.henryxi.com/spring-eventlistener-example)
