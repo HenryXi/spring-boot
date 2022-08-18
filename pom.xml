@@ -36,6 +36,7 @@
         <module>spring-boot-maven-plugin</module>
         <module>spring-boot-async</module>
         <module>spring-boot-filter</module>
+        <module>spring-boot-event-listener</module>
     </modules>
     <properties>
         <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
